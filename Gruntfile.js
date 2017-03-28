@@ -289,6 +289,19 @@ module.exports = function ( grunt ) {
 
 			grunt.option( 'longVersion', longVersion );
 
+			if ( /^\d{1,2}\.\d{1,2}\.\d{1,2}(-RC\d)?$/.test( longVersion ) ) { // perform theme update, add flag file
+				grunt.log.writeln( 'Uploading a new theme version to our page' );
+				grunt.log.writeln( '===========================' );
+
+				if ( grunt.file.isFile( './deploy-new-theme' ) ) {
+					grunt.fail.warn( 'File for flagging theme build already exists.', 1 );
+				}
+				else {
+					// write a dummy file, if this one exists later on build a theme zip will be deployed to our page.
+					grunt.file.write( './deploy-new-theme', 'lets go!' );
+				}
+			}
+
 			grunt.task.run( tasksToRun );
 		}
 		else {

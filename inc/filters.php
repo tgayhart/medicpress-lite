@@ -26,8 +26,6 @@ class MedicPressFilters {
 
 		// Embeds.
 		add_filter( 'embed_oembed_html', array( $this, 'embed_oembed_html' ), 10, 1 );
-		add_filter( 'oembed_result', array( $this, 'oembed_result' ), 10, 3 );
-		add_filter( 'oembed_fetch_url', array( $this, 'oembed_fetch_url' ), 10, 3 );
 
 		// <body> and post class
 		add_filter( 'body_class', array( $this, 'body_class' ), 10, 1 );
@@ -173,53 +171,6 @@ class MedicPressFilters {
 		$classes = array_diff( $classes , array( 'hentry' ) );
 
 		return $classes;
-	}
-
-
-	/**
-	 * Add arguments to oembed iframes.
-	 *
-	 * @param string $html the output.
-	 * @param string $url the url used for the embed.
-	 * @param array  $args arguments.
-	 */
-	function oembed_result( $html, $url, $args ) {
-
-		// Modify youtube parameters.
-		if ( strstr( $html, 'youtube.com/' ) ) {
-			if ( isset( $args['player_id'] ) ) {
-				$html = str_replace( '<iframe ', '<iframe id="' . $args['player_id'] . '"', $html );
-			}
-			if ( isset( $args['api'] ) ) {
-				$html = str_replace( '?feature=oembed', '?feature=oembed&enablejsapi=1', $html );
-			}
-		}
-
-		return $html;
-	}
-
-
-	/**
-	 * Modify the oembed urls.
-	 * Check the full list of args here: https://developer.vimeo.com/apis/oembed.
-	 * You can find the list of defaults providers in WP_oEmbed::__construct().
-	 *
-	 * @param  string $provider URL of the oEmbed provider.
-	 * @param  string $url      URL of the content to be embedded.
-	 * @param  array  $args     Arguments, usually passed from a shortcode.
-	 * @return string           Modified $provider.
-	 */
-	function oembed_fetch_url( $provider, $url, $args ) {
-		if ( false !== strpos( $provider, 'vimeo.com' ) ) {
-			if ( isset( $args['api'] ) ) {
-				$provider = add_query_arg( 'api', absint( $args['api'] ), $provider );
-			}
-			if ( isset( $args['player_id'] ) ) {
-				$provider = add_query_arg( 'player_id', esc_attr( $args['player_id'] ), $provider );
-			}
-		}
-
-		return $provider;
 	}
 
 

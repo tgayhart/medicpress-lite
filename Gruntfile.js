@@ -172,7 +172,7 @@ module.exports = function ( grunt ) {
 						'*.php',
 						'inc/**/*.php',
 						'template-parts/*.php',
-						'vendor/proteusthemes/wp-customizer-utilities/src/Control/Gradient.php',
+						'vendor/proteusthemes/**/*.php',
 					]
 				}
 			}

@@ -13,7 +13,7 @@ function testRequiredFiles {
 		functions.php
 		style.css
 		template-parts/content.php
-		screenshot.jpg
+		# screenshot.jpg
 		readme.txt
 		assets/js/modernizr.custom.20160801.js
 		assets/js/main.min.js

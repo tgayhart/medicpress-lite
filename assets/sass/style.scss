@@ -1,0 +1,181 @@
+/*!
+Theme Name: MedicPress Lite
+Theme URI: https://demo.proteusthemes.com/medicpress-lite/
+Author: ProteusThemes
+Author URI: https://www.proteusthemes.com/
+Description: Patients trust is important, even online. When it comes to doctors, a patient has to feel good and secure around them. MedicPress will boost your online presence with emphasis on local SEO, so your patients will find your website in no time.
+Version: 0.0.0-tmp
+License: GPL 2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-menu, featured-images, footer-widgets, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready, blog, e-commerce, entertainment, holiday
+Text domain: medicpress-lite
+*/
+
+/*
+ TABLE OF CONTENTS
+	01. Project variables............Imported variables
+	02. Twitter Bootstrap............Remove what is not neccessary
+	03. Tags.........................Like <body>, <h1> etc.
+	04. Helpers and utility classes..The general styles like .push-down-15 etc.
+	05. Components...................Imported files, like partials, Compass etc.
+*/
+
+/*------------------------------------*\
+	01. Project variables
+
+	only visible in SASS source files
+\*------------------------------------*/
+
+@import 'vars';
+
+/*------------------------------------*\
+	02. Twitter Bootstrap
+
+	Remove what is not necessary
+\*------------------------------------*/
+
+// Core variables and mixins
+@import 'variables';
+@import 'mixins';
+
+// // Reset and dependencies
+@import 'normalize';
+@import 'print';
+
+// Core CSS
+@import 'reboot';
+@import 'type';
+@import 'images';
+@import 'code';
+@import 'grid';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+
+// // Components
+@import 'animation';
+// @import 'dropdown';
+// @import 'button-group';
+// @import 'input-group';
+// @import 'custom-forms';
+// @import 'nav';
+@import 'navbar';
+@import 'card';
+// @import 'breadcrumb';
+// @import 'pagination';
+// @import 'pager';
+// @import 'labels';
+// @import 'jumbotron';
+// @import 'alert';
+// @import 'progress';
+// @import 'media';
+// @import 'list-group';
+// @import 'close';
+@import 'responsive-embed';
+
+// Components w/ JavaScript
+@import 'modal';
+// @import 'tooltip';
+// @import 'popover';
+@import 'carousel';
+
+// Utility classes
+@import 'utilities';
+
+/*------------------------------------*\
+	03. Tags
+\*------------------------------------*/
+
+html {
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+
+	@include media-breakpoint-up(lg) {
+		font-size: 18px;
+	}
+}
+
+/*------------------------------------*\
+	04. Helpers and very general classes
+\*------------------------------------*/
+
+.screen-reader-text {
+	// scss-lint:disable PlaceholderInExtend
+	@extend .sr-only;
+}
+
+.content-area {
+	margin-bottom: ptr(100);
+}
+
+.site-main {
+	&--left {
+		@include media-breakpoint-up(lg) {
+			padding-left: ptr(45);
+		}
+	}
+
+	&--right {
+		@include media-breakpoint-up(lg) {
+			padding-right: ptr(45);
+		}
+	}
+}
+
+.form-control {
+	font-size: ptr(14);
+	background-color: $gray-lighter;
+	color: #72858a;
+	border: 1px solid $gray-lighter;
+	border-radius: $border-radius;
+	transition: $primary-transition;
+
+	&::placeholder {
+		transition: $primary-transition;
+	}
+
+	&:focus {
+		background-color: transparent;
+		border-color: $gray;
+		color: $gray;
+
+		&::placeholder {
+			color: #72858a;
+		}
+	}
+}
+
+/*------------------------------------*\
+	05. Components
+\*------------------------------------*/
+
+// Layout
+@import 'components/top-bar';
+@import 'components/header';
+@import 'components/page-header';
+@import 'components/sidebar';
+@import 'components/footer';
+@import 'components/error-404';
+@import 'components/boxed-container';
+
+// Elements
+@import 'components/main-navigation';
+@import 'components/buttons';
+
+// WordPress Specific
+@import 'components/article';
+@import 'components/meta';
+@import 'components/wp';
+@import 'components/wp-widgets';
+@import 'components/pagination';
+@import 'components/comments';
+
+// Fonts
+@import '../../bower_components/font-awesome/scss/font-awesome';
+@import 'components/medic-icons';
+
+/*------------------------------------*\
+	The End :)
+\*------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@
 	<div id="comments" class="comments  comments-post-<?php the_ID(); ?>">
 		<?php if ( have_comments() || comments_open() || pings_open() ) : ?>
 
-			<h2 class="comments__heading"><?php esc_html_e( 'Leave a Comment' , 'medicpress-lite' ); ?></h2>
+			<h2 class="comments__heading"><?php esc_html_e( 'Comments' , 'medicpress-lite' ); ?></h2>
 			<p class="comments__counter">(<?php MedicPressHelpers::pretty_comments_number(); ?>)</p>
 
 			<?php if ( have_comments() ) : ?>

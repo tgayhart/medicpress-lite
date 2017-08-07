@@ -1,0 +1,359 @@
+# Copyright (C) 2017 ProteusThemes 
+# This file is distributed under the GPL 2.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: MedicPress Lite 0.0.0-tmp\n"
+"Report-Msgid-Bugs-To: http://proteusthemes.com/help\n"
+"POT-Creation-Date: 2017-08-07 08:52:45+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: 404.php:15
+msgid "404 Picture"
+msgstr ""
+
+#: 404.php:17
+msgid "You landed on the wrong side of the page"
+msgstr ""
+
+#: 404.php:22
+#. translators: the first %s for line break, the second and third %s for link
+#. to home page wrap
+msgid "Page you are looking for is not here. %1$s Go %2$sHome%3$s or try to search:"
+msgstr ""
+
+#: comments.php:13
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:24
+msgid "Comment Navigation"
+msgstr ""
+
+#: comments.php:25
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:26
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:35 comments.php:84
+msgid "Comments for this post are closed."
+msgstr ""
+
+#: comments.php:50
+msgid "Name"
+msgstr ""
+
+#: comments.php:51
+msgid "First and Last name"
+msgstr ""
+
+#: comments.php:56
+msgid "E-mail"
+msgstr ""
+
+#: comments.php:57
+msgid "E-mail Address"
+msgstr ""
+
+#: comments.php:62 comments.php:63
+msgid "Website"
+msgstr ""
+
+#: comments.php:72
+msgid "New Comment"
+msgstr ""
+
+#: functions.php:82 header.php:49
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:175
+msgid "Powered by Dark Sky"
+msgstr ""
+
+#: header.php:47
+msgid "MENU"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:401
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:402
+msgid "All MedicPress Lite theme specific settings."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:407
+msgid "Theme Info"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:408
+msgid "More information about MedicPress."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:444
+msgid "Primary color"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:453
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:456
+msgid "Wide"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:457
+msgid "Boxed"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:465
+msgid "Top bar visibility"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:466
+msgid "Show or hide?"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:469
+msgid "Show"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:470
+msgid "Hide"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:471
+msgid "Hide on Mobile"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:478
+msgid "Featured page"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:479
+msgid "To which page should the Featured Page button link to?"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:485
+msgid "Custom Button Text"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:494
+msgid "Custom URL"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:504
+msgid "Open link in a new window/tab."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:514
+msgid "Footer bottom left text"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:515
+#: inc/customizer/class-customize-base.php:523
+msgid "You can use HTML: a, span, i, em, strong, img."
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:522
+msgid "Footer bottom right text"
+msgstr ""
+
+#: inc/customizer/class-customize-base.php:531
+msgid ""
+"%1$sView Documentation%2$s %3$s %4$sView Demo%2$s %3$s %5$sView MedicPress "
+"Pro%2$s"
+msgstr ""
+
+#: inc/helpers.php:19
+#. translators: %s represents a number
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/helpers.php:119
+msgid "Edit"
+msgstr ""
+
+#: inc/helpers.php:129
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/helpers.php:198
+msgid "Posted by"
+msgstr ""
+
+#: inc/theme-sidebars.php:12
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/theme-sidebars.php:14
+msgid "Sidebar on the blog layout."
+msgstr ""
+
+#: inc/theme-sidebars.php:26
+msgid "Regular Page Sidebar"
+msgstr ""
+
+#: inc/theme-sidebars.php:28
+msgid "Sidebar on the regular page."
+msgstr ""
+
+#: inc/theme-sidebars.php:66
+msgid "Footer"
+msgstr ""
+
+#: inc/theme-sidebars.php:68
+msgid ""
+"Footer area works best with %d widgets. This number can be changed in the "
+"Appearance &rarr; Customize &rarr; Theme Options &rarr; Footer."
+msgstr ""
+
+#: searchform.php:12
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:13
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:20
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:33
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:18 template-parts/content-single.php:34
+#. translators: after that comes pagination like 1, 2, 3 ... 10
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-search.php:38 template-parts/content.php:39
+#: template-parts/content.php:44
+#. translators: %s: Name of current post
+msgid "Read more %s"
+msgstr ""
+
+#: template-parts/page-header.php:18
+msgid "Blog"
+msgstr ""
+
+#: template-parts/page-header.php:28
+msgid "Search Results For"
+msgstr ""
+
+#: template-parts/page-header.php:31
+msgid "Error 404"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "MedicPress Lite"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://demo.proteusthemes.com/medicpress-lite/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Patients trust is important, even online. When it comes to doctors, a "
+"patient has to feel good and secure around them. MedicPress will boost your "
+"online presence with emphasis on local SEO, so your patients will find your "
+"website in no time."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ProteusThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.proteusthemes.com/"
+msgstr ""
+
+#: comments.php:73
+msgctxt "noun"
+msgid "Your comment"
+msgstr ""
+
+#: functions.php:11
+msgctxt ""
+"%1$s - version ie. 5.4.0. %2$s, %3$s and %4$s  - html tags, must be "
+"included around the same words as original"
+msgid ""
+"This theme requires %2$sPHP 5.3.2+%3$s to run. Please contact your hosting "
+"company and ask them to update the PHP version of your site to at least PHP "
+"5.3.2.%4$s Your current version of PHP: %2$s%1$s%3$s"
+msgstr ""
+
+#: inc/filters.php:93
+#. translators: If there are characters in your language that are not supported
+#. by Open Sans or Roboto Slab, translate this to 'off'. Do not translate into
+#. your own language.
+msgctxt "Open Sans and Roboto Slab: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/helpers.php:70
+#. translators: To add an additional character subset specific to your
+#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: inc/theme-sidebars.php:40
+msgctxt "backend"
+msgid "Top Left"
+msgstr ""
+
+#: inc/theme-sidebars.php:42
+msgctxt "backend"
+msgid "Top left widget area for Icon Box, Social Icons, Custom Menu or Text widget."
+msgstr ""
+
+#: inc/theme-sidebars.php:51
+msgctxt "backend"
+msgid "Top Right"
+msgstr ""
+
+#: inc/theme-sidebars.php:53
+msgctxt "backend"
+msgid ""
+"Top right widget area for Icon Box, Social Icons, Custom Menu or Text "
+"widget."
+msgstr ""

@@ -260,23 +260,6 @@ module.exports = function ( grunt ) {
 				}
 			},
 		},
-
-		// https://www.npmjs.com/package/grunt-wp-i18n
-		addtextdomain: {
-			options: {
-				updateDomains: true
-			},
-			target: {
-				files: {
-					src: [
-						'*.php',
-						'inc/**/*.php',
-						'template-parts/*.php',
-						'vendor/proteusthemes/wp-customizer-utilities/src/Control/Gradient.php',
-					]
-				}
-			}
-		},
 	} );
 
 	// update languages files

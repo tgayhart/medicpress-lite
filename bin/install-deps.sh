@@ -21,3 +21,4 @@ gem install scss_lint
 
 # get the jquery ui css
 wget -P vendor/proteusthemes/wp-customizer-utilities/assets https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css
+wget -P vendor/proteusthemes/wp-customizer-utilities/assets https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css

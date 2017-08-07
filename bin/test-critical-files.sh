@@ -15,7 +15,7 @@ function testRequiredFiles {
 		template-parts/content.php
 		screenshot.jpg
 		readme.txt
-		assets/js/modernizr.custom.20160801.js
+		assets/js/modernizr.custom.20170807.min.js
 		assets/js/main.min.js
 		bower_components/font-awesome/css/font-awesome.min.css
 		bower_components/font-awesome/fonts/fontawesome-webfont.woff2

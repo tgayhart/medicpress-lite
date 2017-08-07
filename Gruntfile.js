@@ -125,6 +125,7 @@ module.exports = function ( grunt ) {
 					'bower_components/requirejs/require.js',
 					'bower_components/bootstrap/js/dist/**',
 					'bower_components/font-awesome/css/font-awesome.min.css',
+					'bower_components/font-awesome/css/font-awesome.css',
 					'bower_components/font-awesome/fonts/**',
 					'inc/**',
 					'vendor/**'

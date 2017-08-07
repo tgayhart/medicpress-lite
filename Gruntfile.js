@@ -245,7 +245,7 @@ module.exports = function ( grunt ) {
 		makepot: {
 			theme: {
 				options: {
-					domainPath:      'languages/',
+					domainPath:      './',
 					include:         [config.phpFileRegex, '^inc/'+config.phpFileInSubfolderRegex, '^template-parts/'+config.phpFileRegex],
 					mainFile:        'style.css',
 					potComments:     'Copyright (C) {year} ProteusThemes \n# This file is distributed under the GPL 2.0.',

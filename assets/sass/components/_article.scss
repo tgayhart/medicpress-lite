@@ -62,6 +62,12 @@
 		> p {
 			&:last-of-type {
 				margin-bottom: 0;
+
+				&::after {
+					content: '';
+					display: table;
+					clear: both;
+				}
 			}
 		}
 	}

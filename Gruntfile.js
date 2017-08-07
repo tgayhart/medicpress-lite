@@ -239,8 +239,51 @@ module.exports = function ( grunt ) {
 				'!assets/js/{modernizr,fix.}*',
 				'!assets/js/*.min.js',
 			]
-		}
+		},
+
+		// https://www.npmjs.com/package/grunt-wp-i18n
+		makepot: {
+			theme: {
+				options: {
+					domainPath:      'languages/',
+					include:         [config.phpFileRegex, '^inc/'+config.phpFileInSubfolderRegex, '^template-parts/'+config.phpFileRegex],
+					mainFile:        'style.css',
+					potComments:     'Copyright (C) {year} ProteusThemes \n# This file is distributed under the GPL 2.0.',
+					potFilename:     config.themeSlug + '.pot',
+					potHeaders:      {
+						poedit:                 true,
+						'report-msgid-bugs-to': 'http://proteusthemes.com/help',
+					},
+					type:            'wp-theme',
+					updateTimestamp: false,
+					updatePoFiles:   true,
+				}
+			},
+		},
+
+		// https://www.npmjs.com/package/grunt-wp-i18n
+		addtextdomain: {
+			options: {
+				updateDomains: true
+			},
+			target: {
+				files: {
+					src: [
+						'*.php',
+						'inc/**/*.php',
+						'template-parts/*.php',
+						'vendor/proteusthemes/wp-customizer-utilities/src/Control/Gradient.php',
+					]
+				}
+			}
+		},
 	} );
+
+	// update languages files
+	grunt.registerTask( 'theme_i18n', [
+		'addtextdomain',
+		'makepot:theme',
+	] );
 
 	// when developing
 	grunt.registerTask( 'default', [

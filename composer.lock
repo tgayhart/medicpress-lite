@@ -4,8 +4,40 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "818cc21585272e960f76a16e76e9ae88",
+    "content-hash": "5305f72a716d48373e6cd79fe11c3f3d",
     "packages": [
+        {
+            "name": "freemius/wordpress-sdk",
+            "version": "dev-feature/fs-theme-mode-v6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Freemius/wordpress-sdk.git",
+                "reference": "b962f5c8f8113b1296e9de4efe637cbe8017aa4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/b962f5c8f8113b1296e9de4efe637cbe8017aa4f",
+                "reference": "b962f5c8f8113b1296e9de4efe637cbe8017aa4f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Freemius WordPress SDK",
+            "homepage": "https://freemius.com",
+            "keywords": [
+                "freemius",
+                "plugin",
+                "sdk",
+                "wordpress"
+            ],
+            "time": "2017-06-06 21:30:52"
+        },
         {
             "name": "mexitek/phpcolors",
             "version": "v0.4",
@@ -90,16 +122,16 @@
         },
         {
             "name": "proteusthemes/wp-customizer-utilities",
-            "version": "v2.3.2",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/proteusthemes/wp-customizer-utilities.git",
-                "reference": "df552cba4951a1e5aabd4ae5b00e47d112e125b6"
+                "reference": "3562737c5ea8928c0e250ddecbdba186b791e02a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/proteusthemes/wp-customizer-utilities/zipball/df552cba4951a1e5aabd4ae5b00e47d112e125b6",
-                "reference": "df552cba4951a1e5aabd4ae5b00e47d112e125b6",
+                "url": "https://api.github.com/repos/proteusthemes/wp-customizer-utilities/zipball/3562737c5ea8928c0e250ddecbdba186b791e02a",
+                "reference": "3562737c5ea8928c0e250ddecbdba186b791e02a",
                 "shasum": ""
             },
             "require": {
@@ -134,13 +166,15 @@
                 "wordpress",
                 "wp"
             ],
-            "time": "2017-03-27T07:59:04+00:00"
+            "time": "2017-06-29T07:31:03+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "freemius/wordpress-sdk": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

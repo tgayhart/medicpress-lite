@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5305f72a716d48373e6cd79fe11c3f3d",
+    "content-hash": "b197c759b999ad479cd67ae3a7df1902",
     "packages": [
         {
             "name": "freemius/wordpress-sdk",
-            "version": "dev-feature/fs-theme-mode-v6",
+            "version": "dev-feature/fs-theme-mode-v4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Freemius/wordpress-sdk.git",
-                "reference": "b962f5c8f8113b1296e9de4efe637cbe8017aa4f"
+                "reference": "fcaa4d043bdbd4c4623000730d81502a2a83e38d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/b962f5c8f8113b1296e9de4efe637cbe8017aa4f",
-                "reference": "b962f5c8f8113b1296e9de4efe637cbe8017aa4f",
+                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/fcaa4d043bdbd4c4623000730d81502a2a83e38d",
+                "reference": "fcaa4d043bdbd4c4623000730d81502a2a83e38d",
                 "shasum": ""
             },
             "require": {
@@ -36,7 +36,7 @@
                 "sdk",
                 "wordpress"
             ],
-            "time": "2017-06-06 21:30:52"
+            "time": "2017-03-13 20:12:48"
         },
         {
             "name": "mexitek/phpcolors",

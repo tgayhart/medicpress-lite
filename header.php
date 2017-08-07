@@ -38,9 +38,9 @@
 							$medicpress_logo = $image[0];
 						?>
 
-						<img src="<?php echo esc_url( $medicpress_logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" class="img-fluid" />
+						<img src="<?php echo esc_url( $medicpress_logo ); ?>" alt="<?php bloginfo( 'name' ); ?>" class="img-fluid" />
 					<?php else : ?>
-						<p class="h1  header__logo-text"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></p>
+						<p class="h1  header__logo-text"><?php bloginfo( 'name' ); ?></p>
 					<?php endif; ?>
 				</a>
 				<!-- Toggle button for Main Navigation on mobile -->

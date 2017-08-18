@@ -169,6 +169,7 @@ module.exports = function ( grunt ) {
 						'inc/**/*.php',
 						'template-parts/*.php',
 						'vendor/proteusthemes/**/*.php',
+						'vendor/freemius/**/*.php',
 					]
 				}
 			}

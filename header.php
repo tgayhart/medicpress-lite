@@ -62,7 +62,7 @@
 							'container'      => false,
 							'menu_class'     => 'main-navigation  js-main-nav  js-dropdown',
 							'fallback_cb'    => function() {
-								printf( '<ul id="menu-main-menu" class="main-navigation  js-main-nav  js-dropdown" role="menubar"><li class="menu-item"><a href="%1$s">Home</a></li><li class="menu-item"><a href="%2$s">Set main menu</a></li></ul>', get_home_url(), admin_url( 'nav-menus.php' ) );
+								printf( '<ul id="menu-main-menu" class="main-navigation  js-main-nav  js-dropdown" role="menubar"><li class="menu-item"><a href="%1$s">Home</a></li><li class="menu-item"><a href="%2$s">Set main menu</a></li></ul>', esc_url( get_home_url() ), esc_url( admin_url( 'nav-menus.php' ) ) );
 							}
 						) );
 					}

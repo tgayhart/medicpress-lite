@@ -6,9 +6,9 @@
  * @package medicpress-lite
  */
 
-// Display informative message if PHP version is less than 5.4.
-if ( version_compare( phpversion(), '5.4', '<' ) ) {
-	die( sprintf( esc_html_x( 'This theme requires %2$sPHP 5.4+%3$s to run. Please contact your hosting company and ask them to update the PHP version of your site to at least PHP 5.4%4$s Your current version of PHP: %2$s%1$s%3$s', '%1$s - version ie. 5.4.0. %2$s, %3$s and %4$s  - html tags, must be included around the same words as original', 'medicpress-lite' ), esc_html( phpversion() ), '<strong>', '</strong>', '<br>' ) );
+// Display informative message if PHP version is less than 5.5.
+if ( version_compare( phpversion(), '5.5', '<' ) ) {
+	die( sprintf( esc_html_x( 'This theme requires %2$sPHP 5.5+%3$s to run. Please contact your hosting company and ask them to update the PHP version of your site to at least PHP 5.5%4$s Your current version of PHP: %2$s%1$s%3$s', '%1$s - version ie. 5.5.0. %2$s, %3$s and %4$s  - html tags, must be included around the same words as original', 'medicpress-lite' ), esc_html( phpversion() ), '<strong>', '</strong>', '<br>' ) );
 }
 
 // Create a helper function for easy SDK access.

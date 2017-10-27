@@ -168,10 +168,7 @@ if ( ! function_exists( 'medicpress_enqueue_scripts' ) ) {
 
 		// Pass data to the main script.
 		wp_localize_script( 'medicpress-main', 'MedicPressVars', array(
-			'pathToTheme'   => get_template_directory_uri(),
-			'ajax_url'      => admin_url( 'admin-ajax.php' ),
-			'ajax_nonce'    => wp_create_nonce( 'pt-medicpress-ajax-verification' ),
-			'poweredByText' => esc_html__( 'Powered by Dark Sky', 'medicpress-lite' ),
+			'pathToTheme' => get_template_directory_uri(),
 		) );
 
 		// For nested comments.

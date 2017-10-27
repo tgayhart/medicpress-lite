@@ -90,12 +90,8 @@ msgstr ""
 msgid "Copyright &copy; %s. All rights reserved."
 msgstr ""
 
-#: functions.php:110 header.php:49
+#: functions.php:81 header.php:49
 msgid "Main Menu"
-msgstr ""
-
-#: functions.php:203
-msgid "Powered by Dark Sky"
 msgstr ""
 
 #: header.php:47

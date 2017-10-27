@@ -4,40 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "05da68884f54af6d9938817197b8b870",
+    "content-hash": "818cc21585272e960f76a16e76e9ae88",
     "packages": [
-        {
-            "name": "freemius/wordpress-sdk",
-            "version": "1.2.2.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Freemius/wordpress-sdk.git",
-                "reference": "1992b7ffd07d5a6c169a4fa587aa335a6ef78021"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/1992b7ffd07d5a6c169a4fa587aa335a6ef78021",
-                "reference": "1992b7ffd07d5a6c169a4fa587aa335a6ef78021",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Freemius WordPress SDK",
-            "homepage": "https://freemius.com",
-            "keywords": [
-                "freemius",
-                "plugin",
-                "sdk",
-                "wordpress"
-            ],
-            "time": "2017-08-31T07:35:00+00:00"
-        },
         {
             "name": "mexitek/phpcolors",
             "version": "v0.4",

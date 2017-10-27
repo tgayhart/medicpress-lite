@@ -11,35 +11,6 @@ if ( version_compare( phpversion(), '5.5', '<' ) ) {
 	die( sprintf( esc_html_x( 'This theme requires %2$sPHP 5.5+%3$s to run. Please contact your hosting company and ask them to update the PHP version of your site to at least PHP 5.5%4$s Your current version of PHP: %2$s%1$s%3$s', '%1$s - version ie. 5.5.0. %2$s, %3$s and %4$s  - html tags, must be included around the same words as original', 'medicpress-lite' ), esc_html( phpversion() ), '<strong>', '</strong>', '<br>' ) );
 }
 
-// Create a helper function for easy SDK access.
-function medicpresslite_fs() {
-		global $medicpresslite_fs;
-
-		if ( ! isset( $medicpresslite_fs ) ) {
-				// Include Freemius SDK.
-				require_once dirname(__FILE__) . '/vendor/freemius/wordpress-sdk/start.php';
-
-				$medicpresslite_fs = fs_dynamic_init( array(
-						'id'                  => '1269',
-						'slug'                => 'medicpress-lite',
-						'type'                => 'theme',
-						'public_key'          => 'pk_4e0a70bb714d85fecac06e055934c',
-						'is_premium'          => false,
-						'has_addons'          => false,
-						'has_paid_plans'      => false,
-				) );
-		}
-
-		return $medicpresslite_fs;
-}
-
-// Init Freemius.
-medicpresslite_fs();
-
-// Signal that SDK was initiated.
-do_action( 'medicpresslite_fs_loaded' );
-
-
 // Composer autoloader.
 require_once trailingslashit( get_template_directory() ) . 'vendor/autoload.php';
 

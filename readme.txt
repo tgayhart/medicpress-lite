@@ -15,3 +15,7 @@ MedicPress Lite WordPress Theme is derived from Underscores WordPress Theme, Cop
 Font Awesome, Copyright 2012 Dave Gandy.
 Font Awesome are licensed under the terms of the SIL OFL 1.1.
 Source: http://fontawesome.io/license/
+
+Image from screenshot, Copyright Free-Photos 2015.
+Image is licensed under the terms of the CC0 Public Domain.
+Source: https://pixabay.com/en/almonds-food-nuts-healthy-diet-768699/

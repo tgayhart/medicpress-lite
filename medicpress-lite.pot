@@ -39,7 +39,7 @@ msgid "Page you are looking for is not here. %1$s Go %2$sHome%3$s or try to sear
 msgstr ""
 
 #: comments.php:13
-msgid "Leave a Comment"
+msgid "Comments"
 msgstr ""
 
 #: comments.php:24
@@ -82,12 +82,16 @@ msgstr ""
 msgid "New Comment"
 msgstr ""
 
-#: functions.php:82 header.php:49
-msgid "Main Menu"
+#: footer.php:11
+msgid "%1$sMedicPress%2$s - WordPress theme made by ProteusThemes."
 msgstr ""
 
-#: functions.php:175
-msgid "Powered by Dark Sky"
+#: footer.php:13
+msgid "Copyright &copy; %s. All rights reserved."
+msgstr ""
+
+#: functions.php:81 header.php:49
+msgid "Main Menu"
 msgstr ""
 
 #: header.php:47
@@ -312,12 +316,12 @@ msgstr ""
 
 #: functions.php:11
 msgctxt ""
-"%1$s - version ie. 5.4.0. %2$s, %3$s and %4$s  - html tags, must be "
+"%1$s - version ie. 5.5.0. %2$s, %3$s and %4$s  - html tags, must be "
 "included around the same words as original"
 msgid ""
-"This theme requires %2$sPHP 5.3.2+%3$s to run. Please contact your hosting "
+"This theme requires %2$sPHP 5.5+%3$s to run. Please contact your hosting "
 "company and ask them to update the PHP version of your site to at least PHP "
-"5.3.2.%4$s Your current version of PHP: %2$s%1$s%3$s"
+"5.5%4$s Your current version of PHP: %2$s%1$s%3$s"
 msgstr ""
 
 #: inc/filters.php:93

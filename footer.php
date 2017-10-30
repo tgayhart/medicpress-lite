@@ -8,9 +8,9 @@
 $medicpress_footer_widgets_layout = MedicPressHelpers::footer_widgets_layout_array();
 
 // Bottom footer left text.
-$medicpress_footer_bottom_left_txt   = get_theme_mod( 'footer_bottom_left_txt', '<strong><a href="https://www.proteusthemes.com/wordpress-themes/medicpress/">MedicPress</a></strong> - WordPress theme made by ProteusThemes.' );
+$medicpress_footer_bottom_left_txt   = get_theme_mod( 'footer_bottom_left_txt', sprintf( esc_html__( '%1$sMedicPress%2$s - WordPress theme made by ProteusThemes.' , 'medicpress-lite' ), '<strong><a href="https://www.proteusthemes.com/wordpress-themes/medicpress/">', '</a></strong>' ) );
 // Bottom footer right text.
-$medicpress_footer_bottom_right_txt  = get_theme_mod( 'footer_bottom_right_txt', 'Copyright &copy; ' . date( 'Y' ) . '. All rights reserved.' );
+$medicpress_footer_bottom_right_txt  = get_theme_mod( 'footer_bottom_right_txt', sprintf( esc_html__( 'Copyright &copy; %s. All rights reserved.', 'medicpress-lite' ), date( 'Y' ) ) );
 
 ?>
 

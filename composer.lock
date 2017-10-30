@@ -4,40 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b197c759b999ad479cd67ae3a7df1902",
+    "content-hash": "818cc21585272e960f76a16e76e9ae88",
     "packages": [
-        {
-            "name": "freemius/wordpress-sdk",
-            "version": "dev-feature/fs-theme-mode-v4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Freemius/wordpress-sdk.git",
-                "reference": "fcaa4d043bdbd4c4623000730d81502a2a83e38d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Freemius/wordpress-sdk/zipball/fcaa4d043bdbd4c4623000730d81502a2a83e38d",
-                "reference": "fcaa4d043bdbd4c4623000730d81502a2a83e38d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Freemius WordPress SDK",
-            "homepage": "https://freemius.com",
-            "keywords": [
-                "freemius",
-                "plugin",
-                "sdk",
-                "wordpress"
-            ],
-            "time": "2017-03-13 20:12:48"
-        },
         {
             "name": "mexitek/phpcolors",
             "version": "v0.4",
@@ -172,9 +140,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "freemius/wordpress-sdk": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

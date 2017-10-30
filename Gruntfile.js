@@ -143,6 +143,7 @@ module.exports = function ( grunt ) {
 				config.themeSlug + '/vendor/proteusthemes/wai-aria-walker-nav-menu/README.md',
 				config.themeSlug + '/style.min.css',
 				config.themeSlug + '/assets/sass',
+				config.themeSlug + '/bower_components/bootstrap/js/dist/*.js.map',
 			]
 		},
 

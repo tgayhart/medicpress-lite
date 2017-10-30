@@ -33,6 +33,9 @@ class MedicPressFilters {
 
 		// Special dropdown menu.
 		add_filter( 'wp_nav_menu_objects', array( $this, 'add_images_to_special_submenu' ) );
+
+		// Custom logo.
+		add_filter( 'get_custom_logo', array( $this, 'filter_custom_logo_html' ) );
 	}
 
 
@@ -199,6 +202,20 @@ class MedicPressFilters {
 		}
 
 		return $items;
+	}
+
+
+	/**
+	 * Filter the custom logo HTML output code.
+	 *
+	 * @param  string $html The default HTML code.
+	 * @return string       Changed HTML code.
+	 */
+	public function filter_custom_logo_html( $html ) {
+		$html = str_replace( 'class="custom-logo-link"' , 'class="header__logo  custom-logo-link"', $html );
+		$html = str_replace( 'class="custom-logo"' , 'class="img-fluid  custom-logo"', $html );
+
+		return $html;
 	}
 }
 

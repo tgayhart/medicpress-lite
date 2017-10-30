@@ -72,7 +72,6 @@ if ( ! function_exists( 'medicpress_lite_theme_setup' ) ) {
 		) );
 
 		// Menus.
-		add_theme_support( 'menus' );
 		register_nav_menu( 'main-menu', esc_html__( 'Main Menu', 'medicpress-lite' ) );
 
 		/**

@@ -5,7 +5,7 @@
  * @package medicpress-lite
  */
 
-function medicpress_sidebars() {
+function medicpress_lite_sidebars() {
 	// Blog Sidebar.
 	register_sidebar(
 		array(
@@ -57,7 +57,7 @@ function medicpress_sidebars() {
 	);
 
 	// Footer.
-	$footer_widgets_num = count( MedicPressHelpers::footer_widgets_layout_array() );
+	$footer_widgets_num = count( MedicPressLiteHelpers::footer_widgets_layout_array() );
 
 	// Only register if not 0.
 	if ( $footer_widgets_num > 0 ) {
@@ -74,4 +74,4 @@ function medicpress_sidebars() {
 		);
 	}
 }
-add_action( 'widgets_init', 'medicpress_sidebars' );
+add_action( 'widgets_init', 'medicpress_lite_sidebars' );

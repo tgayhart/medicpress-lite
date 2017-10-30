@@ -11,12 +11,12 @@
 		<?php if ( have_comments() || comments_open() || pings_open() ) : ?>
 
 			<h2 class="comments__heading"><?php esc_html_e( 'Comments' , 'medicpress-lite' ); ?></h2>
-			<p class="comments__counter">(<?php MedicPressHelpers::pretty_comments_number(); ?>)</p>
+			<p class="comments__counter">(<?php MedicPressLiteHelpers::pretty_comments_number(); ?>)</p>
 
 			<?php if ( have_comments() ) : ?>
 
 				<div class="comments__container">
-					<?php wp_list_comments( array( 'callback' => 'MedicPressHelpers::custom_comment', 'avatar_size' => '75' ) ); ?>
+					<?php wp_list_comments( array( 'callback' => 'MedicPressLiteHelpers::custom_comment', 'avatar_size' => '75' ) ); ?>
 				</div>
 
 				<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through. ?>

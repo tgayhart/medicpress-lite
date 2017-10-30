@@ -15,7 +15,7 @@ use ProteusThemes\CustomizerUtils\Helpers as WpUtilsHelpers;
  *
  * @link http://codex.wordpress.org/Theme_Customization_API
  */
-class MedicPress_Customizer_Base {
+class MedicPress_Lite_Customizer_Base {
 	/**
 	 * The singleton manager instance
 	 *

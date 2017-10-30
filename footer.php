@@ -5,7 +5,7 @@
  * @package medicpress-lite
  */
 
-$medicpress_footer_widgets_layout = MedicPressHelpers::footer_widgets_layout_array();
+$medicpress_footer_widgets_layout = MedicPressLiteHelpers::footer_widgets_layout_array();
 
 // Bottom footer left text.
 $medicpress_footer_bottom_left_txt   = get_theme_mod( 'footer_bottom_left_txt', sprintf( esc_html__( '%1$sMedicPress%2$s - WordPress theme made by ProteusThemes.' , 'medicpress-lite' ), '<strong><a href="https://www.proteusthemes.com/wordpress-themes/medicpress/">', '</a></strong>' ) );

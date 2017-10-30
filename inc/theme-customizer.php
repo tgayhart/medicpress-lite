@@ -11,24 +11,24 @@
  *
  * @param  WP_Customize_Manager $wp_customize
  */
-if ( ! function_exists( 'medicpress_customizer' ) ) {
-	function medicpress_customizer( $wp_customize ) {
+if ( ! function_exists( 'medicpress_lite_customizer' ) ) {
+	function medicpress_lite_customizer( $wp_customize ) {
 		// Add required files.
-		MedicPressHelpers::load_file( '/inc/customizer/class-customize-base.php' );
+		MedicPressLiteHelpers::load_file( '/inc/customizer/class-customize-base.php' );
 
-		new MedicPress_Customizer_Base( $wp_customize );
+		new MedicPress_Lite_Customizer_Base( $wp_customize );
 	}
-	add_action( 'customize_register', 'medicpress_customizer' );
+	add_action( 'customize_register', 'medicpress_lite_customizer' );
 }
 
 
 /**
  * Takes care for the frontend output from the customizer and nothing else
  */
-if ( ! function_exists( 'medicpress_customizer_frontend' ) && ! class_exists( 'MedicPress_Customize_Frontent' ) ) {
-	function medicpress_customizer_frontend() {
-		MedicPressHelpers::load_file( '/inc/customizer/class-customize-frontend.php' );
-		$medicpress_customize_frontent = new MedicPress_Customize_Frontent();
+if ( ! function_exists( 'medicpress_lite_customizer_frontend' ) && ! class_exists( 'MedicPress_Lite_Customize_Frontent' ) ) {
+	function medicpress_lite_customizer_frontend() {
+		MedicPressLiteHelpers::load_file( '/inc/customizer/class-customize-frontend.php' );
+		$MedicPress_Lite_Customize_Frontent = new MedicPress_Lite_Customize_Frontent();
 	}
-	add_action( 'init', 'medicpress_customizer_frontend' );
+	add_action( 'init', 'medicpress_lite_customizer_frontend' );
 }

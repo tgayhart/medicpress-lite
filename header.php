@@ -61,7 +61,7 @@
 					?>
 					<!-- Featured Button -->
 					<?php
-						$featured_page_data = MedicPressHelpers::get_featured_page_data();
+						$featured_page_data = MedicPressLiteHelpers::get_featured_page_data();
 
 						if ( ! empty( $featured_page_data ) ) :
 					?>

@@ -13,5 +13,9 @@ MedicPress Lite WordPress Theme bundles the following third-party resources:
 MedicPress Lite WordPress Theme is derived from Underscores WordPress Theme, Copyright 2013 Automattic, Inc. Underscores WordPress Theme is distributed under the terms of the GNU GPL.
 
 Font Awesome, Copyright 2012 Dave Gandy.
-Font Awesome are licensed under the terms of the SIL OFL 1.1.
+Font Awesome are licensed under the terms of the SIL OFL 1.1. and MIT License.
 Source: http://fontawesome.io/license/
+
+Image from screenshot, Copyright Free-Photos 2015.
+Image is licensed under the terms of the CC0 Public Domain.
+Source: https://pixabay.com/en/almonds-food-nuts-healthy-diet-768699/

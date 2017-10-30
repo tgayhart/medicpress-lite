@@ -30,12 +30,12 @@ $medicpress_footer_bottom_right_txt  = get_theme_mod( 'footer_bottom_right_txt',
 				<div class="footer-bottom">
 					<?php if ( ! empty( $medicpress_footer_bottom_left_txt ) ) : ?>
 						<div class="footer-bottom__left">
-							<?php echo wp_kses_post( do_shortcode( $medicpress_footer_bottom_left_txt ) ); ?>
+							<?php echo wp_kses_post( $medicpress_footer_bottom_left_txt ); ?>
 						</div>
 					<?php endif; ?>
 					<?php if ( ! empty( $medicpress_footer_bottom_right_txt ) ) : ?>
 						<div class="footer-bottom__right">
-							<?php echo wp_kses_post( do_shortcode( $medicpress_footer_bottom_right_txt ) ); ?>
+							<?php echo wp_kses_post( $medicpress_footer_bottom_right_txt ); ?>
 						</div>
 					<?php endif; ?>
 				</div>

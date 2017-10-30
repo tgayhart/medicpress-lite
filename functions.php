@@ -40,13 +40,8 @@ require_once get_template_directory() . '/inc/helpers.php';
  */
 if ( ! function_exists( 'medicpress_lite_theme_setup' ) ) {
 	function medicpress_lite_theme_setup() {
-		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on MedicPress, use a find and replace
-		 * to change 'medicpress-lite' to the name of your theme in all the template files
-		 */
-		load_theme_textdomain( 'medicpress-lite', get_template_directory() . '/languages' );
+		// Make theme available for translation.
+		load_theme_textdomain( 'medicpress-lite' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );

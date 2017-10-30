@@ -378,7 +378,7 @@ class MedicPress_Lite_Customizer_Base {
 
 		// Footer.
 		$this->wp_customize->add_setting( 'footer_bottom_left_txt', array( 'default' => '<strong><a href="https://www.proteusthemes.com/wordpress-themes/medicpress/">MedicPress</a></strong> - WordPress theme made by ProteusThemes.' ) );
-		$this->wp_customize->add_setting( 'footer_bottom_right_txt', array( 'default' => 'Copyright &copy; ' . date( 'Y' ) . '. All rights reserved.' ) );
+		$this->wp_customize->add_setting( 'footer_bottom_right_txt', array( 'default' => 'Copyright &copy; ' . date_i18n( 'Y' ) . '. All rights reserved.' ) );
 
 		// Theme Info.
 		$this->wp_customize->add_setting( 'theme_info_text' );

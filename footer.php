@@ -10,7 +10,7 @@ $medicpress_footer_widgets_layout = MedicPressLiteHelpers::footer_widgets_layout
 // Bottom footer left text.
 $medicpress_footer_bottom_left_txt   = get_theme_mod( 'footer_bottom_left_txt', sprintf( esc_html__( '%1$sMedicPress%2$s - WordPress theme made by ProteusThemes.' , 'medicpress-lite' ), '<strong><a href="https://www.proteusthemes.com/wordpress-themes/medicpress/">', '</a></strong>' ) );
 // Bottom footer right text.
-$medicpress_footer_bottom_right_txt  = get_theme_mod( 'footer_bottom_right_txt', sprintf( esc_html__( 'Copyright &copy; %s. All rights reserved.', 'medicpress-lite' ), date( 'Y' ) ) );
+$medicpress_footer_bottom_right_txt  = get_theme_mod( 'footer_bottom_right_txt', sprintf( esc_html__( 'Copyright &copy; %s. All rights reserved.', 'medicpress-lite' ), date_i18n( 'Y' ) ) );
 
 ?>
 

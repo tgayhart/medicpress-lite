@@ -109,6 +109,8 @@ html {
 }
 
 .site-main {
+	padding-right: ptr(45);
+
 	&--left {
 		@include media-breakpoint-up(lg) {
 			padding-left: ptr(45);

@@ -1,6 +1,6 @@
 <?php
 /**
- * MedicPress functions and definitions
+ * MedicPress Lite functions and definitions
  *
  * @author ProteusThemes <info@proteusthemes.com>
  * @package medicpress-lite
@@ -38,15 +38,10 @@ require_once get_template_directory() . '/inc/helpers.php';
 /**
  * Theme support and thumbnail sizes
  */
-if ( ! function_exists( 'medicpress_theme_setup' ) ) {
-	function medicpress_theme_setup() {
-		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on MedicPress, use a find and replace
-		 * to change 'medicpress-lite' to the name of your theme in all the template files
-		 */
-		load_theme_textdomain( 'medicpress-lite', get_template_directory() . '/languages' );
+if ( ! function_exists( 'medicpress_lite_theme_setup' ) ) {
+	function medicpress_lite_theme_setup() {
+		// Make theme available for translation.
+		load_theme_textdomain( 'medicpress-lite' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -77,7 +72,6 @@ if ( ! function_exists( 'medicpress_theme_setup' ) ) {
 		) );
 
 		// Menus.
-		add_theme_support( 'menus' );
 		register_nav_menu( 'main-menu', esc_html__( 'Main Menu', 'medicpress-lite' ) );
 
 		/**
@@ -101,7 +95,7 @@ if ( ! function_exists( 'medicpress_theme_setup' ) ) {
 			'default-image' => '',
 		) ) );
 	}
-	add_action( 'after_setup_theme', 'medicpress_theme_setup' );
+	add_action( 'after_setup_theme', 'medicpress_lite_theme_setup' );
 }
 
 
@@ -118,8 +112,8 @@ if ( ! isset( $content_width ) ) {
 /**
  * Enqueue CSS stylesheets
  */
-if ( ! function_exists( 'medicpress_enqueue_styles' ) ) {
-	function medicpress_enqueue_styles() {
+if ( ! function_exists( 'medicpress_lite_enqueue_styles' ) ) {
+	function medicpress_lite_enqueue_styles() {
 		$stylesheet_uri = get_stylesheet_uri();
 
 		if ( 'yes' === get_theme_mod( 'use_minified_css', 'no' ) ) {
@@ -128,26 +122,26 @@ if ( ! function_exists( 'medicpress_enqueue_styles' ) ) {
 
 		wp_enqueue_style( 'medicpress-main', $stylesheet_uri, array(), MEDICPRESSLITE_WP_VERSION );
 	}
-	add_action( 'wp_enqueue_scripts', 'medicpress_enqueue_styles' );
+	add_action( 'wp_enqueue_scripts', 'medicpress_lite_enqueue_styles' );
 }
 
 
 /**
  * Enqueue Google Web Fonts.
  */
-if ( ! function_exists( 'medicpress_enqueue_google_web_fonts' ) ) {
-	function medicpress_enqueue_google_web_fonts() {
-		wp_enqueue_style( 'medicpress-google-fonts', MedicPressHelpers::google_web_fonts_url(), array(), null );
+if ( ! function_exists( 'medicpress_lite_enqueue_google_web_fonts' ) ) {
+	function medicpress_lite_enqueue_google_web_fonts() {
+		wp_enqueue_style( 'medicpress-google-fonts', MedicPressLiteHelpers::google_web_fonts_url(), array(), null );
 	}
-	add_action( 'wp_enqueue_scripts', 'medicpress_enqueue_google_web_fonts' );
+	add_action( 'wp_enqueue_scripts', 'medicpress_lite_enqueue_google_web_fonts' );
 }
 
 
 /**
  * Enqueue JS scripts
  */
-if ( ! function_exists( 'medicpress_enqueue_scripts' ) ) {
-	function medicpress_enqueue_scripts() {
+if ( ! function_exists( 'medicpress_lite_enqueue_scripts' ) ) {
+	function medicpress_lite_enqueue_scripts() {
 		// Modernizr for the frontend feature detection.
 		wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/modernizr.custom.20170807.min.js', array(), null );
 
@@ -176,24 +170,24 @@ if ( ! function_exists( 'medicpress_enqueue_scripts' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 	}
-	add_action( 'wp_enqueue_scripts', 'medicpress_enqueue_scripts' );
+	add_action( 'wp_enqueue_scripts', 'medicpress_lite_enqueue_scripts' );
 }
 
 
 /**
  * Require the files in the inc folder.
  */
-MedicPressHelpers::load_file( '/inc/theme-sidebars.php' );
-MedicPressHelpers::load_file( '/inc/filters.php' );
-MedicPressHelpers::load_file( '/inc/theme-customizer.php' );
+MedicPressLiteHelpers::load_file( '/inc/theme-sidebars.php' );
+MedicPressLiteHelpers::load_file( '/inc/filters.php' );
+MedicPressLiteHelpers::load_file( '/inc/theme-customizer.php' );
 
 
 /**
  * WIA-ARIA nav walker and accompanying JS file.
  */
-if ( ! function_exists( 'medicpress_wai_aria_js' ) ) {
-	function medicpress_wai_aria_js() {
+if ( ! function_exists( 'medicpress_lite_wai_aria_js' ) ) {
+	function medicpress_lite_wai_aria_js() {
 		wp_enqueue_script( 'medicpress-wp-wai-aria', get_template_directory_uri() . '/vendor/proteusthemes/wai-aria-walker-nav-menu/wai-aria.js', array( 'jquery' ), null, true );
 	}
-	add_action( 'wp_enqueue_scripts', 'medicpress_wai_aria_js' );
+	add_action( 'wp_enqueue_scripts', 'medicpress_lite_wai_aria_js' );
 }

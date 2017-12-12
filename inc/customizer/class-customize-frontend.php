@@ -10,7 +10,7 @@
 /**
  * Customizer frontend related code
  */
-class MedicPress_Customize_Frontent {
+class MedicPress_Lite_Customize_Frontent {
 
 	/**
 	 * Add actions to load the right staff at the right places (header, footer).

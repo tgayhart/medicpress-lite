@@ -29,20 +29,12 @@
 		<div class="container">
 			<div class="header">
 				<!-- Logo -->
-				<a class="header__logo<?php echo ! has_custom_logo() ? '  header__logo--text' : ''; ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<?php if ( has_custom_logo() ) : ?>
-
-						<?php
-							$custom_logo_id = get_theme_mod( 'custom_logo' );
-							$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-							$medicpress_logo = $image[0];
-						?>
-
-						<img src="<?php echo esc_url( $medicpress_logo ); ?>" alt="<?php bloginfo( 'name' ); ?>" class="img-fluid" />
-					<?php else : ?>
-						<p class="h1  header__logo-text"><?php bloginfo( 'name' ); ?></p>
-					<?php endif; ?>
+				<?php if ( ! has_custom_logo() ) : ?>
+				<a class="header__logo  header__logo--text" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<p class="h1  header__logo-text"><?php bloginfo( 'name' ); ?></p>
 				</a>
+				<?php endif; ?>
+				<?php the_custom_logo(); ?>
 				<!-- Toggle button for Main Navigation on mobile -->
 				<button class="btn  btn-primary  header__navbar-toggler  hidden-lg-up  js-sticky-mobile-option" type="button" data-toggle="collapse" data-target="#medicpress-main-navigation"><i class="fa  fa-bars  hamburger"></i> <span><?php esc_html_e( 'MENU' , 'medicpress-lite' ); ?></span></button>
 				<!-- Main Navigation -->
@@ -69,7 +61,7 @@
 					?>
 					<!-- Featured Button -->
 					<?php
-						$featured_page_data = MedicPressHelpers::get_featured_page_data();
+						$featured_page_data = MedicPressLiteHelpers::get_featured_page_data();
 
 						if ( ! empty( $featured_page_data ) ) :
 					?>

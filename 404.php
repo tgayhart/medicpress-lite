@@ -12,7 +12,7 @@ get_template_part( 'template-parts/page-header' );
 ?>
 
 <div class="content-area  error-404">
-	<img class="error-404__image" src="<?php echo esc_attr( get_template_directory_uri() ) . '/assets/images/404.png'; ?>" alt="<?php esc_html_e( '404 Picture' , 'medicpress-lite' ); ?>">
+	<img class="error-404__image" src="<?php echo esc_url( get_template_directory_uri() ) . '/assets/images/404.png'; ?>" alt="<?php esc_html_e( '404 Picture' , 'medicpress-lite' ); ?>">
 	<div class="container">
 		<p class="h2  error-404__subtitle"><?php esc_html_e( 'You landed on the wrong side of the page' , 'medicpress-lite' ); ?></p>
 		<p class="error-404__text">

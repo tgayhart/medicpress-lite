@@ -6,9 +6,9 @@
  */
 
 /**
- * MedicPressFilters class with filter hooks
+ * MedicPressLiteFilters class with filter hooks
  */
-class MedicPressFilters {
+class MedicPressLiteFilters {
 
 	/**
 	 * Runs on class initialization. Adds filters and actions.
@@ -33,6 +33,9 @@ class MedicPressFilters {
 
 		// Special dropdown menu.
 		add_filter( 'wp_nav_menu_objects', array( $this, 'add_images_to_special_submenu' ) );
+
+		// Custom logo.
+		add_filter( 'get_custom_logo', array( $this, 'filter_custom_logo_html' ) );
 	}
 
 
@@ -56,7 +59,7 @@ class MedicPressFilters {
 	function footer_widgets_params( $params ) {
 		static $counter              = 0;
 		static $first_row            = true;
-		$footer_widgets_layout_array = MedicPressHelpers::footer_widgets_layout_array();
+		$footer_widgets_layout_array = MedicPressLiteHelpers::footer_widgets_layout_array();
 
 		if ( 'footer-widgets' === $params[0]['id'] ) {
 			// 'before_widget' contains __col-num__, see inc/theme-sidebars.php.
@@ -200,7 +203,21 @@ class MedicPressFilters {
 
 		return $items;
 	}
+
+
+	/**
+	 * Filter the custom logo HTML output code.
+	 *
+	 * @param  string $html The default HTML code.
+	 * @return string       Changed HTML code.
+	 */
+	public function filter_custom_logo_html( $html ) {
+		$html = str_replace( 'class="custom-logo-link"' , 'class="header__logo  custom-logo-link"', $html );
+		$html = str_replace( 'class="custom-logo"' , 'class="img-fluid  custom-logo"', $html );
+
+		return $html;
+	}
 }
 
 // Single instance.
-$medicpress_filters = new MedicPressFilters();
+$medicpress_lite_filters = new MedicPressLiteFilters();

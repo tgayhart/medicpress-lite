@@ -6,9 +6,9 @@
  */
 
 /**
- * MedicPressHelpers class with static methods
+ * MedicPressLiteHelpers class with static methods
  */
-class MedicPressHelpers {
+class MedicPressLiteHelpers {
 	/**
 	 * The comments_number() does not use _n function, here we are to fix that
 	 */

@@ -22,7 +22,7 @@ $medicpress_footer_bottom_right_txt  = get_theme_mod( 'footer_bottom_right_txt',
 						<?php dynamic_sidebar( 'footer-widgets' ); ?>
 					</div>
 				</div>
-				<a class="footer-top__back-to-top  js-back-to-top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+				<a class="footer-top__back-to-top  js-back-to-top" href="#" aria-label="Back to Top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 			</div>
 		<?php endif; ?>
 		<div class="footer-bottom__container">
